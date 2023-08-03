@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Makerdiary is a team of technology enthusiasts, makers and designers, looking to make it easy for developers to build connected devices and get to production quickly with innovative solutions.">
+    <meta name="description"
+        content="Makerdiary is a team of technology enthusiasts, makers and designers, looking to make it easy for developers to build connected devices and get to production quickly with innovative solutions.">
     <meta name="author" content="makerdiary">
     <title>Makerdiary Community</title>
     <link rel="icon" href="./assets/favicon.png">
@@ -64,6 +65,7 @@
                 --bg: hsl(var(--hue), 90%, 5%);
                 --fg: hsl(var(--hue), 90%, 95%);
             }
+
             .ip__track {
                 stroke: hsl(var(--hue), 90%, 15%);
             }
@@ -75,14 +77,17 @@
             from {
                 stroke-dashoffset: 0;
             }
+
             50% {
                 animation-timing-function: steps(1);
                 stroke-dashoffset: -358;
             }
+
             50.01% {
                 animation-timing-function: linear;
                 stroke-dashoffset: 358;
             }
+
             to {
                 stroke-dashoffset: 0;
             }
@@ -92,14 +97,25 @@
             from {
                 stroke-dashoffset: 358;
             }
+
             50% {
                 stroke-dashoffset: 0;
             }
+
             to {
                 stroke-dashoffset: -358;
             }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC8BR2Z253"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GC8BR2Z253');
+    </script>
 </head>
 
 <body>
@@ -125,8 +141,10 @@
                     <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
                 </g>
                 <g stroke-dasharray="180 656">
-                    <path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0" d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
-                    <path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358" d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
+                    <path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0"
+                        d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
+                    <path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358"
+                        d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
                 </g>
             </g>
         </svg>
